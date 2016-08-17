@@ -977,7 +977,7 @@ button {
 }
 
 .ots-widget-container .video-background {
-    background-image: url("../images/main/background.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/widget-background.png");
     background-size: contain;
 }
 
@@ -990,7 +990,7 @@ button {
 .ots-widget-container .local-controls {
     height: 60px;
     width: 100%;
-    background-image: url("../images/main/control-bar.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/widget-control-bar.png");
     background-size: contain;
     position: absolute;
     bottom: 0;
@@ -1052,7 +1052,7 @@ button {
 
 .ots-widget-container .ots-video-control.call {
     background-color: rgba(87, 193, 228, .85);
-    background-image: url("https://assets.tokbox.com/solutions/images/call-icon.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-call.png");
     margin: 0 15px;
 }
 
@@ -1110,12 +1110,12 @@ button {
 /**/
 
 .ots-video-control.video {
-    background-image: url("https://assets.tokbox.com/solutions/images/icon-video-icon.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-video.png");
 }
 
 .ots-video-control.video.disabled,
 .ots-video-control.video:hover {
-    background-image: url("https://assets.tokbox.com/solutions/images/icon-no-video-icon.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-no-video.png");
 }
 
 .ots-video-control.audio {
