@@ -1128,12 +1128,12 @@ button {
 }
 
 .ots-video-control.microphone {
-    background-image: url("../images/icon/mic.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-mic.png");
 }
 
 .ots-video-control.microphone.disabled,
 .ots-video-control.microphone:hover {
-    background-image: url("../images/icon/muted-mic.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-muted-mic.png");
 }
 
 
