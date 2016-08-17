@@ -1052,7 +1052,7 @@ button {
 
 .ots-widget-container .ots-video-control.call {
     background-color: rgba(87, 193, 228, .85);
-    background-image: url("../images/icon/call.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/call-icon.png");
     margin: 0 15px;
 }
 
@@ -1062,69 +1062,69 @@ button {
 
 .ots-widget-container .ots-video-control.call.active {
     background-color: red;
-    background-image: url("../images/icon/hang-up.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-hang-up.png");
 }
 
 .ots-video-control.text-chat {
     margin-left: 10px;
-    background-image: url("../images/icon/message.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-message.png");
 }
 
 .ots-video-control.text-chat.disabled,
 .ots-video-control.text-chat:hover {
-    background-image: url("../images/icon/message.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-message.png");
     background-color: brown;
 }
 
 .ots-video-control.text-chat.active {
     background-color: brown;
-    background-image: url("../images/icon/message.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-message.png");
 }
 
 .ots-video-control.archiving {
     margin-left: 10px;
-    background-image: url("../images/icon/record-not-recording.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-not-recording.png");
 }
 
 .ots-video-control.archiving.active,
 .ots-video-control.archiving:hover {
-    background-image: url("../images/icon/recording.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-recording.png");
 }
 
 .ots-video-control.share-screen {
     margin-left: 10px;
-    background-image: url("../images/icon/screen-share.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-screen-share.png");
 }
 
 .ots-video-control.share-screen.disabled,
 .ots-video-control.share-screen:hover {
-    background-image: url("../images/icon/screen-share.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-screen-share.png");
 }
 
 .ots-video-control.share-screen.active {
     background-color: red;
-    background-image: url("../images/icon/screen-share.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-screen-share.png");
 }
 
 
 /**/
 
 .ots-video-control.video {
-    background-image: url("../images/icon/video-icon.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-video-icon.png");
 }
 
 .ots-video-control.video.disabled,
 .ots-video-control.video:hover {
-    background-image: url("../images/icon/no-video-icon.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-no-video-icon.png");
 }
 
 .ots-video-control.audio {
-    background-image: url("../images/icon/audio.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-audio.png");
 }
 
 .ots-video-control.audio.disabled,
 .ots-video-control.audio:hover {
-    background-image: url("../images/icon/no-audio.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-no-audio.png");
 }
 
 .ots-video-control.microphone {
@@ -1213,7 +1213,7 @@ button {
     right: 15px;
     width: 25px;
     height: 25px;
-    background-image: url("../images/icon/oval-281-x.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-oval-281-x.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: transparent;
@@ -1223,13 +1223,13 @@ button {
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .ots-modal .ots-modal-body .ots-cancel-btn-install {
-        background-image: url("../images/icon/oval-281-x@2x.png");
+        background-image: url("https://assets.tokbox.com/solutions/images/icon-oval-281-x@2x.png");
         background-size: 25px 25px;
     }
 }
 
 .ots-icon-share-large {
-    background-image: url("../images/icon/screenshare-large.png");
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-screenshare-large.png");
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -1238,7 +1238,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .ots-icon-share-large {
-        background-image: url("../images/icon/screenshare-large@2x.png");
+        background-image: url("https://assets.tokbox.com/solutions/images/icon-screenshare-large@2x.png");
         background-size: 60px 41px;
     }
 }
