@@ -1,22 +1,3 @@
-/*.ots-widget-wrapper {
-    box-sizing: border-box;
-}
-
-.ots-widget-wrapper *,
-.ots-widget-wrapper *:before,
-.ots-widget-wrapper *:after {
-    box-sizing: inherit;
-}
-
-
-.ots-widget-wrapper .hidden, .ots-widget-container .hidden {
-    display: none !important;
-}*/
-
-.ots-hidden {
-    display: none;
-}
-
 .ots-app-container {
     width: 90vw;
     height: 90vh;
@@ -24,8 +5,11 @@
     min-height: calc(720px/(1024/760));
     margin: 35px auto;
     padding: 15px;
-    border: 1px solid rgba(87, 193, 228, .85);
     box-sizing: border-box;
+}
+
+.ots-hidden {
+    display: none !important;
 }
 
 .ots-app-container *,
@@ -37,20 +21,12 @@
 .ots-widget-container {
     width: 100%;
     height: 100%;
+    font-family: helvetica, arial, sans-serif;
+    border: 1px solid rgba(87, 193, 228, .85);
+    padding: 5px;
 }
 
-/*.ots-widget-container {
-    position: relative;
-    width: 90vw;
-    height: 90vh;
-    min-width: 720px;
-    min-height: calc(720px/(1024/760));
-    margin: 35px auto;
-    border: 1px solid rgba(87, 193, 228, .85);
-    border-radius: 6px;
-    padding: 15px;
-}*/
-
+/* Moves text chat next to the primary video feed */
 .ots-widget-container.display-text-chat {
     display: -webkit-box;
     display: flex;
@@ -61,7 +37,7 @@
 }
 
 .ots-widget-container.viewing-shared-screen {
-    margin-bottom: 85px;
+    padding-bottom: 65px;
 }
 
 .ots-widget-container .video-container {
@@ -131,7 +107,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.ots-widget-container .sharing-mask-text {
+.ots-widget-container .sharing-mask .sharing-text {
     color: lightblue;
     font-size: 1.2em;
     font-weight: 300;
