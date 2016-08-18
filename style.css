@@ -1,4 +1,4 @@
-.ots-widget-wrapper {
+/*.ots-widget-wrapper {
     box-sizing: border-box;
 }
 
@@ -11,10 +11,35 @@
 
 .ots-widget-wrapper .hidden, .ots-widget-container .hidden {
     display: none !important;
+}*/
+
+.ots-hidden {
+    display: none;
 }
 
+.ots-app-container {
+    width: 90vw;
+    height: 90vh;
+    min-width: 720px;
+    min-height: calc(720px/(1024/760));
+    margin: 35px auto;
+    padding: 15px;
+    border: 1px solid rgba(87, 193, 228, .85);
+    box-sizing: border-box;
+}
+
+.ots-app-container *,
+.ots-app-container *:before,
+.ots-app-container *:after {
+    box-sizing: inherit;
+}
 
 .ots-widget-container {
+    width: 100%;
+    height: 100%;
+}
+
+/*.ots-widget-container {
     position: relative;
     width: 90vw;
     height: 90vh;
@@ -24,7 +49,7 @@
     border: 1px solid rgba(87, 193, 228, .85);
     border-radius: 6px;
     padding: 15px;
-}
+}*/
 
 .ots-widget-container.display-text-chat {
     display: -webkit-box;
@@ -278,6 +303,262 @@ only screen and (min-device-pixel-ratio:1.5) {
 .ots-video-control.microphone.disabled,
 .ots-video-control.microphone:hover {
     background-image: url("https://assets.tokbox.com/solutions/images/icon-muted-mic.png");
+}
+
+/*Text Chat */
+
+.ots-text-chat {
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid #c6c6c6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+    font-family: helvetica, arial, sans-serif;
+    color: #343c3e;
+    font-weight: normal;
+}
+
+.ots-text-chat .ots-messages-header {
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    color: #9f9f9f;
+    border-bottom: 1px solid #c6c6c6;
+    background: #f2f2f2;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 2px;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ots-text-chat .ots-messages-header.hidden {
+    display: none;
+}
+
+.ots-text-chat .ots-messages-holder {
+    height: 365px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+.ots-text-chat .ots-messages-holder .ots-messages-alert {
+    position: relative;
+    padding: 30px;
+    min-height: 65px;
+    background: rgba(248, 231, 28, 0.25);
+    margin: 25px;
+    text-align: center;
+    color: #ad7212;
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item {
+    position: relative;
+    padding: 0 0 0 50px;
+    margin: 40px 25px 10px 20px
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item .ots-user-name-initial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #b3b3b3;
+    color: #fff;
+    font-size: 24px
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item .ots-item-text {
+    position: relative;
+    padding: 12px;
+    min-height: 65px;
+    background: #f2f2f2;
+    margin-left: 14px;
+    color: #7c7c7c;
+    font-size: 15px;
+    line-height: 1.2;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 0;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item .ots-item-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 14px 14px 0;
+    border-color: transparent #f2f2f2 transparent transparent
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item .ots-item-text span {
+    display: block;
+    margin-bottom: 6px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item .ots-item-timestamp {
+    position: absolute;
+    top: -18px;
+    right: 20px;
+    color: #b3b3b3;
+    font-size: 12px
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent {
+    padding: 0 50px 0 0;
+    margin: 40px 20px 10px 25px
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-user-name-initial {
+    left: inherit;
+    right: 0;
+    background: #259de8
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-item-text {
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-left: 0;
+    margin-right: 14px
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-item-text:before {
+    left: inherit;
+    right: -12px;
+    border-width: 14px 14px 0 0;
+    border-color: #f2f2f2 transparent transparent transparent
+}
+
+.ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-item-timestamp {
+    right: 80px
+}
+
+.ots-text-chat .ots-send-message-box {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #c6c6c6;
+    padding-right: 70px
+}
+
+.ots-text-chat .ots-send-message-box input[type="text"],
+.ots-text-chat .ots-send-message-box textarea {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: 0;
+    padding: 25px 25px 0;
+    font-size: 16px;
+    resize: none
+}
+
+.ots-text-chat .ots-send-message-box button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 69px;
+    background-color: #f2f2f2;
+    border-left: 1px solid #c6c6c6;
+    outline: 0;
+    border: 0;
+    border-left: 1px solid #c6c6c6;
+}
+
+.ots-text-chat .ots-send-message-box button:hover {
+    background-color: #259de8;
+}
+
+.ots-text-chat .ots-send-message-box .ots-character-count {
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    color: #cf2027;
+    font-size: 12px;
+}
+
+.ots-text-chat .ots-user-prof-info {
+    width: auto;
+    height: 430px;
+    padding: 32px 46px;
+}
+
+.ots-text-chat .ots-user-prof-info span {
+    display: block;
+    margin-bottom: 10px;
+    color: #5f5a5a
+}
+
+.ots-text-chat .ots-user-prof-info span em {
+    color: #867f7f;
+    font-style: normal;
+}
+
+.ots-text-chat .ots-user-prof-info hr {
+    margin: 36px 0;
 }
 
 
