@@ -159,8 +159,8 @@ only screen and (min-device-pixel-ratio:1.5) {
     position: absolute;
     bottom: 75px;
     right: 30px;
-    width: 174px !important;
-    height: 150px !important;
+    width: 174px;
+    height: 150px;
     z-index: 11;
 }
 
