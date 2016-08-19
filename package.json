@@ -1,6 +1,6 @@
 {
   "name": "opentok-solutions-css",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Consolidated CSS for OpenTok Accelerator Packs",
   "main": "style.css",
   "scripts": {
