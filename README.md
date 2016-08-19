@@ -1,4 +1,4 @@
-![logo](./tokbox-logo.png)
+![logo](https://raw.githubusercontent.com/opentok/solutions-css/master/tobox-logo.png?token=AE4PZ25IYtId9AF2gNqsKqHZ-SoD1PwCks5XwGjwwA%3D%3D)
 
 # OpenTok Solutions CSS
 
