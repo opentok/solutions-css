@@ -724,8 +724,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
     /* Location of the box */
     left: 0;
@@ -740,6 +738,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
+    z-index: 1051;
 }
 
 .ots-archiving-modal .modal-content {
@@ -747,9 +746,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    border-radius: 6px;
+    width: 60%;
     position: relative;
     text-align: center;
+}
+
+.ots-archiving-modal .modal-content::before {
+    content: 'OpenTok Archiving';
+    display: inline-block;
+    height: 20px;
+    width: 175px;
+    padding-left: 15px;
+    margin: 0 auto 10px auto;
+    color: grey;
+    font-weight: 100;
+    background-image: url(http://assets.tokbox.com/solutions/images/tokbox.png);
+    background-size: contain;
+    background-position: 2px -1px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 .ots-archiving-modal .close-button {
@@ -770,12 +786,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .ots-archiving-modal .download {
-    width: 68px;
-    height: 17px;
+    width: 100%;
+    -o-object-fit: contain;
     object-fit: contain;
-    font-family: Muli;
-    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: #0099cc;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
 }
 
 .ots-archiving-modal .archive-name {
@@ -788,8 +807,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .ots-archiving-modal .archive-details {
     width: 90px;
     height: 16px;
-    object-fit: contain;
-    font-family: Muli;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #000000;
 }
