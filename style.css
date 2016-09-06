@@ -560,7 +560,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 
 /* Screensharing styles */
 
-.ots-ss-modal {
+.ots-modal {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -569,7 +569,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     background: rgba(0, 0, 0, 0.1);
 }
 
-.ots-ss-modal .ots-modal-body {
+.ots-modal .ots-modal-body {
     position: relative;
     width: 456px;
     height: 286px;
@@ -586,18 +586,18 @@ only screen and (min-device-pixel-ratio:1.5) {
     color: #282828;
 }
 
-.ots-ss-modal .ots-modal-body .ots-ss-modal-title span {
+.ots-modal .ots-modal-body .ots-modal-title span {
     font-size: 20px;
     line-height: 20px;
     font-weight: bold;
 }
 
-.ots-ss-modal .ots-modal-body .ots-ss-modal-title.with-icon {
+.ots-modal .ots-modal-body .ots-modal-title.with-icon {
     position: relative;
     padding-left: 70px;
 }
 
-.ots-ss-modal .ots-modal-body .ots-ss-modal-title.with-icon i {
+.ots-modal .ots-modal-body .ots-modal-title.with-icon i {
     position: absolute;
     top: 50%;
     left: 0;
@@ -608,12 +608,12 @@ only screen and (min-device-pixel-ratio:1.5) {
     max-height: 42px;
 }
 
-.ots-ss-modal .ots-modal-body p {
+.ots-modal .ots-modal-body p {
     font-size: 14px;
     margin: 20px 0;
 }
 
-.ots-ss-modal .ots-modal-body .ots-btn-install {
+.ots-modal .ots-modal-body .ots-btn-install {
     display: block;
     width: 316px;
     height: 44px;
@@ -628,7 +628,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     border-radius: 3px;
 }
 
-.ots-ss-modal .ots-modal-body .ots-cancel-btn-install {
+.ots-modal .ots-modal-body .ots-cancel-btn-install {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -643,7 +643,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
-    .ots-ss-modal .ots-modal-body .ots-cancel-btn-install {
+    .ots-modal .ots-modal-body .ots-cancel-btn-install {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-oval-281-x@2x.png");
         background-size: 25px 25px;
     }
