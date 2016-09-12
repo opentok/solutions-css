@@ -137,6 +137,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     left: 0;
     right: 0;
     background: #000;
+    margin: 0 auto;
 }
 
 .ots-widget-container .video-wrap.secondary-video .OT_publisher {
