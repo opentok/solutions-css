@@ -119,10 +119,24 @@ only screen and (min-device-pixel-ratio:1.5) {
     text-align: center;
 }
 
+.ots-widget-container .viewing-shared-mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: 2;
+}
+
 .ots-widget-container .video-wrap {
     border-radius: 6px;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.ots-widget-container .video-wrap.shared-screen {
+    left: 0;
+    right: 0;
+    background: #000;
 }
 
 .ots-widget-container .video-wrap.secondary-video .OT_publisher {
