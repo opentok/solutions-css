@@ -382,12 +382,12 @@ only screen and (min-device-pixel-ratio:1.5) {
     border-radius: 8px
 }
 
-.ots-widget-wrapper .ots-widget-extras .ots-messages-holder .ots-messages-alert.green {
+.ots-text-chat .ots-messages-holder .ots-messages-alert.green {
     color: #417505;
     background-color: rgba(126,210,33,0.30);
 }
 
-.ots-widget-wrapper .ots-widget-extras .ots-messages-holder .ots-messages-alert.red {
+.ots-text-chat .ots-messages-holder .ots-messages-alert.red {
     color: #c41f4b;
     background-color: rgba(210,33,33,0.30);
 }
