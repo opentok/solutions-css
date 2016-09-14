@@ -731,12 +731,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
     width: 20px !important;
 }
 
-
 /* Archiving */
-
 .ots-archiving-modal {
-    display: none;
-    /* Hidden by default */
     position: fixed;
     /* Stay in place */
     padding-top: 100px;
@@ -754,43 +750,74 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
     z-index: 1051;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ots-archiving-modal * {
+  box-sizing: border-box;
 }
 
 .ots-archiving-modal .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 6px;
-    width: 60%;
+    padding: 0;
+    border-top: 2px solid #33abf5;
+    width: 710px;
+    height: 265px;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.ots-archiving-modal .modal-content::before {
-    content: 'OpenTok Archiving';
+.ots-archiving-modal .modal-content > div {
+  display: flex;
+  flex-direction: column;
+  height: 33.33%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ots-archiving-modal .modal-header h2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.ots-archiving-modal .modal-header h2::before {
+    content: '';
+    position: absolute;
     display: inline-block;
-    height: 20px;
-    width: 175px;
-    padding-left: 15px;
-    margin: 0 auto 10px auto;
-    color: grey;
-    font-weight: 100;
-    background-image: url(http://assets.tokbox.com/solutions/images/tokbox.png);
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    bottom: -10px;
+    background-image: url(http://assets.tokbox.com/solutions/images/icon-download.png);
     background-size: contain;
-    background-position: 2px -1px;
+    background-position: 2px -5px;
     background-repeat: no-repeat;
-    box-sizing: border-box;
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .ots-archiving-modal .modal-header::before {
+        background-image: url("https://assets.tokbox.com/solutions/images/icon-download@2x.png");
+    }
 }
 
 .ots-archiving-modal .close-button {
     position: absolute;
-    top: 10px;
+    background-image: url("https://assets.tokbox.com/solutions/images/icon-close-thin.png");
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    top: 15px;
     right: 15px;
-    color: #aaaaaa;
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -800,50 +827,59 @@ only screen and (min-device-pixel-ratio: 1.5) {
     text-decoration: none;
 }
 
-.ots-archiving-modal .download {
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #0099cc;
-    text-decoration: none;
-    margin: 10px 0;
-    display: inline-block;
+.ots-archiving-modal .modal-info {
+  background-color: #fafbfc;
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  font-size: 16px;
 }
 
-.ots-archiving-modal .archive-name {
-    font-family: helvetica, arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 10px auto;
+.ots-archiving-modal .modal-info > div {
+  margin: 5px auto;
+  font-family: Muli;
 }
 
-.ots-archiving-modal .archive-details {
-    width: 90px;
-    height: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: #000000;
+.ots-archiving-modal .modal-info .message {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 18px;
+  width: 80%;
 }
 
-.ots-archiving-modal .date-time {
-    width: 76px;
-    height: 80px;
-    object-fit: contain;
-    opacity: 0.5;
-    font-family: Muli;
-    font-size: 13px;
-    text-align: right;
-    color: #202a2f;
+.ots-archiving-modal .modal-info .archive-id {
+  width: 70%;
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.ots-archiving-modal .archive-information {
-    width: 300px;
-    height: 80px;
-    object-fit: contain;
-    font-family: Muli;
-    font-size: 13px;
-    line-height: 1.2;
-    color: #000000;
+.ots-archiving-modal .modal-info .archive-details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  width: auto;
+}
+
+.ots-archiving-modal .modal-button-container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ots-archiving-modal .btn {
+  display: inline-block;
+  font-family: helvetica, arial, sans-serif;
+  width: 145px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(68 68 68, 1);
+  font-size: 14px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.ots-archiving-modal .btn.download, .ots-archiving-modal .btn.ok {
+  background-color: #4a90e2;
 }
