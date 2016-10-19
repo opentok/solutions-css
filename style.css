@@ -384,12 +384,12 @@ only screen and (min-device-pixel-ratio:1.5) {
 
 .ots-text-chat .ots-messages-holder .ots-messages-alert.green {
     color: #417505;
-    background-color: rgba(126,210,33,0.30);
+    background-color: rgba(126, 210, 33, 0.30);
 }
 
 .ots-text-chat .ots-messages-holder .ots-messages-alert.red {
     color: #c41f4b;
-    background-color: rgba(210,33,33,0.30);
+    background-color: rgba(210, 33, 33, 0.30);
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item {
@@ -592,7 +592,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.1);
-    z-index:1000;
+    z-index: 1000;
 }
 
 .ots-ss-modal .ots-modal-body {
@@ -709,6 +709,16 @@ only screen and (min-device-pixel-ratio: 1.5) {
     align-items: center;
 }
 
+.ots-annotation-toolbar-container .OT_panel.colors-hover:before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    height: 60px;
+    width: 60px;
+    background-color: #323232;
+    z-index: -1;
+}
+
 .ots-annotation-toolbar-container .annotation-btn {
     height: 60px;
     width: 60px;
@@ -717,6 +727,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-color: #666666;
     cursor: pointer;
     border: none;
+}
+
+.ots-annotation-toolbar-container .annotation-btn:hover,
+.ots-annotation-toolbar-container .annotation-btn.selected {
+    background-color: #323232;
 }
 
 .ots-annotation-toolbar-container .annotation-btn.pen {
@@ -890,6 +905,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 /* Archiving */
+
 .ots-archiving-modal {
     position: fixed;
     /* Stay in place */
@@ -912,7 +928,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .ots-archiving-modal * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .ots-archiving-modal .modal-content {
@@ -928,21 +944,21 @@ only screen and (min-device-pixel-ratio: 1.5) {
     flex-direction: column;
 }
 
-.ots-archiving-modal .modal-content > div {
-  display: flex;
-  flex-direction: column;
-  height: 33.33%;
-  justify-content: center;
-  align-items: center;
+.ots-archiving-modal .modal-content> div {
+    display: flex;
+    flex-direction: column;
+    height: 33.33%;
+    justify-content: center;
+    align-items: center;
 }
 
 .ots-archiving-modal .modal-header h2 {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 20px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 .ots-archiving-modal .modal-header h2::before {
@@ -957,7 +973,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-size: contain;
     background-position: 2px -5px;
     background-repeat: no-repeat;
-
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -986,59 +1001,61 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .ots-archiving-modal .modal-info {
-  background-color: #fafbfc;
-  border: 1px solid #e8e8e8;
-  padding: 20px;
-  font-size: 16px;
+    background-color: #fafbfc;
+    border: 1px solid #e8e8e8;
+    padding: 20px;
+    font-size: 16px;
 }
 
-.ots-archiving-modal .modal-info > div {
-  margin: 5px auto;
-  font-family: Muli;
+.ots-archiving-modal .modal-info> div {
+    margin: 5px auto;
+    font-family: Muli;
 }
 
 .ots-archiving-modal .modal-info .message {
-  font-size: 13px;
-  font-weight: 100;
-  line-height: 18px;
-  width: 80%;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 18px;
+    width: 80%;
 }
 
 .ots-archiving-modal .modal-info .archive-id {
-  width: 70%;
-  font-weight: 200;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    width: 70%;
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ots-archiving-modal .modal-info .archive-details {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    width: auto;
 }
 
 .ots-archiving-modal .modal-button-container {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ots-archiving-modal .btn {
-  display: inline-block;
-  font-family: helvetica, arial, sans-serif;
-  width: 145px;
-  height: 35px;
-  line-height: 35px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid rgba(68 68 68, 1);
-  font-size: 14px;
-  font-weight: 100;
-  cursor: pointer;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ots-archiving-modal .btn.download, .ots-archiving-modal .btn.ok {
-  background-color: #4a90e2;
+.ots-archiving-modal .btn {
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(68 68 68, 1);
+    font-size: 14px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.ots-archiving-modal .btn.download,
+.ots-archiving-modal .btn.ok {
+    background-color: #4a90e2;
 }
