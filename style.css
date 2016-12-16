@@ -27,6 +27,7 @@
     padding: 5px;
 }
 
+
 /* Moves text chat next to the primary video feed */
 
 .ots-widget-container.display-text-chat {
@@ -81,7 +82,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     padding: 0;
 }
 
-.ots-aspect-ratio> .video-container {
+.ots-aspect-ratio>.video-container {
     position: absolute;
 }
 
@@ -365,6 +366,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     overflow: hidden;
     overflow-y: scroll
 }
+
 .ots-text-chat .ots-messages-holder.has-alert {
     padding-top: 30px;
 }
@@ -946,7 +948,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     flex-direction: column;
 }
 
-.ots-archiving-modal .modal-content> div {
+.ots-archiving-modal .modal-content>div {
     display: flex;
     flex-direction: column;
     height: 33.33%;
@@ -1009,7 +1011,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 16px;
 }
 
-.ots-archiving-modal .modal-info> div {
+.ots-archiving-modal .modal-info>div {
     margin: 5px auto;
     font-family: Muli;
 }
