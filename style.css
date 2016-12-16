@@ -27,7 +27,6 @@
     padding: 5px;
 }
 
-
 /* Moves text chat next to the primary video feed */
 
 .ots-widget-container.display-text-chat {
@@ -365,6 +364,9 @@ only screen and (min-device-pixel-ratio:1.5) {
     height: 365px;
     overflow: hidden;
     overflow-y: scroll
+}
+.ots-text-chat .ots-messages-holder.has-alert {
+    padding-top: 30px;
 }
 
 .ots-text-chat .ots-messages-holder .ots-messages-alert {
