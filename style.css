@@ -908,6 +908,41 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 
+.ots-annotation-prompt{
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 200px;
+    border-radius: 5px;
+}
+
+.ots-annotation-prompt span{
+    display:block;
+    float: left;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    line-height: 20px;
+}
+.ots-annotation-prompt .dissmiss-click{
+    display: block;
+    width: 40px;
+    height: 36px;
+    background-image: url("https://assets.tokbox.com/solutions/images/images/trash-can.png");
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.ots-annotation-prompt .commit-click{
+    display: block;
+    width: 40px;
+    height: 36px;
+    background-image: url("https://assets.tokbox.com/solutions/images/stroke-3.png");
+    float: right;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 /* Archiving */
 
 .ots-archiving-modal {
