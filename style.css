@@ -2,7 +2,7 @@
     width: 90vw;
     height: 90vh;
     min-width: 720px;
-    min-height: calc(720px/(1024/760));
+    min-height: calc(720px / (1024 / 760));
     margin: 35px auto;
     padding: 15px;
     box-sizing: border-box;
@@ -26,7 +26,6 @@
     border-radius: 6px;
     padding: 5px;
 }
-
 
 /* Moves text chat next to the primary video feed */
 
@@ -63,15 +62,12 @@
     background-position: center center;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:1.5),
-only screen and (min--moz-device-pixel-ratio:1.5),
-only screen and (min-device-pixel-ratio:1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     .ots-icon-check {
         background-image: url("https://assets.tokbox.com/solutions/images/text-chat-check@2x.png");
         background-size: 27px 21px;
     }
 }
-
 
 /* Aspect Ratio for Screen Sharing */
 
@@ -82,7 +78,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     padding: 0;
 }
 
-.ots-aspect-ratio>.video-container {
+.ots-aspect-ratio > .video-container {
     position: absolute;
 }
 
@@ -186,7 +182,6 @@ only screen and (min-device-pixel-ratio:1.5) {
 .ots-widget-container .secondary-video.active {
     border: 1px solid rgba(255, 255, 255, .8);
 }
-
 
 /* Move down so as to not cover canvas */
 
@@ -314,7 +309,6 @@ only screen and (min-device-pixel-ratio:1.5) {
 .ots-video-control.microphone:hover {
     background-image: url("https://assets.tokbox.com/solutions/images/icon-muted-mic.png");
 }
-
 
 /*Text Chat */
 
@@ -586,7 +580,6 @@ only screen and (min-device-pixel-ratio:1.5) {
     margin: 36px 0;
 }
 
-
 /* Screensharing styles */
 
 .ots-ss-modal {
@@ -671,9 +664,7 @@ only screen and (min-device-pixel-ratio:1.5) {
     background-color: transparent;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     .ots-ss-modal .ots-modal-body .ots-cancel-btn-install {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-close@2x.png");
         background-size: 25px 25px;
@@ -686,15 +677,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-position: center center;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     .ots-icon-share-large {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-screenshare-large@2x.png");
         background-size: 60px 41px;
     }
 }
-
 
 /*Annotation Styles*/
 
@@ -907,6 +895,43 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-size: 6.5px 23.5px;
 }
 
+.ots-annotation-prompt {
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 200px;
+    border-radius: 5px;
+}
+
+.ots-annotation-prompt span {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    line-height: 20px;
+}
+
+.ots-annotation-prompt .dismiss-btn {
+    display: block;
+    width: 40px;
+    height: 36px;
+    background-image: url(https://assets.tokbox.com/solutions/images/annotation-trash.png);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.ots-annotation-prompt .confirm-btn {
+    display: block;
+    width: 40px;
+    height: 36px;
+    background-image: url(https://assets.tokbox.com/solutions/images/annotation-confirm.png);
+    float: right;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 
 /* Archiving */
 
@@ -948,7 +973,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     flex-direction: column;
 }
 
-.ots-archiving-modal .modal-content>div {
+.ots-archiving-modal .modal-content > div {
     display: flex;
     flex-direction: column;
     height: 33.33%;
@@ -979,9 +1004,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-repeat: no-repeat;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     .ots-archiving-modal .modal-header::before {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-download@2x.png");
     }
@@ -1011,7 +1034,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 16px;
 }
 
-.ots-archiving-modal .modal-info>div {
+.ots-archiving-modal .modal-info > div {
     margin: 5px auto;
     font-family: Muli;
 }
