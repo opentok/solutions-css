@@ -910,6 +910,7 @@
     padding: 10px;
     color: white;
     line-height: 20px;
+    padding-right: 0px;
 }
 
 .ots-annotation-prompt .dismiss-btn {
