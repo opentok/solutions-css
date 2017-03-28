@@ -31,11 +31,14 @@
 
 .ots-widget-container.display-text-chat {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkitalign-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ots-widget-container.viewing-shared-screen {
@@ -83,6 +86,8 @@
 }
 
 .ots-widget-container .shared-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 0;
@@ -101,9 +106,15 @@
     top: 0;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 1001;
     background: rgba(0, 0, 0, 0.8);
 }
@@ -149,6 +160,8 @@
 .ots-widget-container .primary-video {
     width: 100%;
     height: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
 }
 
@@ -161,12 +174,14 @@
     bottom: 0;
     border-radius: 0 0 6px 6px;
     display: -webkit-box;
-    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 1001;
 }
 
@@ -316,8 +331,6 @@
     position: relative;
     margin-top: 20px;
     border: 1px solid #c6c6c6;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background: #fff;
     font-family: helvetica, arial, sans-serif;
@@ -346,8 +359,6 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 2px;
-    -moz-background-clip: padding-box;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box
 }
 
@@ -356,8 +367,13 @@
 }
 
 .ots-text-chat .ots-messages-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 365px;
     overflow: hidden;
     overflow-y: scroll
@@ -377,8 +393,6 @@
     color: #ad7212;
     font-size: 14px;
     line-height: 1.4;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
     border-radius: 8px
 }
 
@@ -394,7 +408,8 @@
 
 .ots-text-chat .ots-messages-holder .ots-message-item {
     position: relative;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding: 0 50px 0 50px;
     margin: 15px 25px 10px 20px
 }
@@ -408,8 +423,6 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     background: #b3b3b3;
     color: #fff;
@@ -439,8 +452,6 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 0;
-    -moz-background-clip: padding-box;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box
 }
 
@@ -465,7 +476,6 @@
     word-break: break-all;
     word-break: break-word;
     -ms-hyphens: auto;
-    -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto
 }
@@ -481,7 +491,8 @@
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent {
     margin: 15px 20px 10px 25px;
-    align-self: flex-end
+    -ms-flex-item-align: end;
+        align-self: flex-end
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-user-name-initial {
@@ -506,8 +517,6 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
-    -moz-background-clip: padding-box;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     margin-left: 0;
     margin-right: 14px
@@ -609,11 +618,7 @@
     padding: 62px 70px;
     background: #ffffff;
     border: 1px solid #c7c7c7;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.35);
     color: #282828;
 }
@@ -655,8 +660,6 @@
     color: #fff;
     font-size: 14px;
     background: #259de8;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     text-decoration: none;
 }
@@ -705,9 +708,16 @@
 }
 
 .ots-annotation-toolbar-container .OT_panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ots-annotation-toolbar-container .OT_panel.colors-hover:before {
@@ -788,9 +798,17 @@
     right: 65px;
     width: 40px;
     background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
 }
 
@@ -846,8 +864,13 @@
 }
 
 .ots-annotation-toolbar-container .OT_subpanel.shapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 75px;
     min-height: 159.89px;
 }
@@ -983,16 +1006,30 @@
     height: 265px;
     position: relative;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .ots-archiving-modal .modal-content > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 33.33%;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ots-archiving-modal .modal-header h2 {
@@ -1077,9 +1114,15 @@
 
 .ots-archiving-modal .modal-button-container {
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .ots-archiving-modal .btn {
