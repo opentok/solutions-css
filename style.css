@@ -333,7 +333,7 @@
     font-size: 13px;
     color: #9f9f9f;
     border-bottom: 1px solid #c6c6c6;
-    background: #f2f2f2;
+    background: #f3f3f3;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 0;
     -webkit-border-bottom-left-radius: 0;
@@ -356,6 +356,8 @@
 }
 
 .ots-text-chat .ots-messages-holder {
+    display: flex;
+    flex-direction: column;
     height: 365px;
     overflow: hidden;
     overflow-y: scroll
@@ -392,8 +394,9 @@
 
 .ots-text-chat .ots-messages-holder .ots-message-item {
     position: relative;
-    padding: 0 0 0 50px;
-    margin: 40px 25px 10px 20px
+    align-self: flex-start;
+    padding: 0 50px 0 50px;
+    margin: 15px 25px 10px 20px
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item .ots-user-name-initial {
@@ -414,10 +417,12 @@
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item .ots-item-text {
+    display: inline-block;
     position: relative;
+    top: -12px;
     padding: 12px;
-    min-height: 65px;
-    background: #f2f2f2;
+    min-height: 50px;
+    background: #f3f3f3;
     margin-left: 14px;
     color: #7c7c7c;
     font-size: 15px;
@@ -448,7 +453,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 14px 14px 0;
-    border-color: transparent #f2f2f2 transparent transparent
+    border-color: transparent #f3f3f3 transparent transparent
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item .ots-item-text span {
@@ -466,16 +471,17 @@
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item .ots-item-timestamp {
-    position: absolute;
+    position: relative;
     top: -18px;
-    right: 20px;
     color: #b3b3b3;
-    font-size: 12px
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent {
-    padding: 0 50px 0 0;
-    margin: 40px 20px 10px 25px
+    margin: 15px 20px 10px 25px;
+    align-self: flex-end
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-user-name-initial {
@@ -485,6 +491,9 @@
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-item-text {
+    float: right;
+    background: #def5ff;
+    color: #18adf9;
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 8px;
     -webkit-border-bottom-left-radius: 8px;
@@ -508,11 +517,11 @@
     left: inherit;
     right: -12px;
     border-width: 14px 14px 0 0;
-    border-color: #f2f2f2 transparent transparent transparent
+    border-color: #def5ff transparent transparent transparent
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-item-timestamp {
-    right: 80px
+  text-align: right
 }
 
 .ots-text-chat .ots-send-message-box {
@@ -540,14 +549,14 @@
     right: 0;
     width: 70px;
     height: 69px;
-    background-color: #f2f2f2;
+    background-color: #f3f3f3;
     border-left: 1px solid #c6c6c6;
     outline: 0;
     border: 0;
     border-left: 1px solid #c6c6c6;
 }
 
-.ots-text-chat .ots-send-message-box button:hover {
+.ots-text-chat .ots-send-message-box button:hover, .ots-text-chat .ots-send-message-box .active {
     background-color: #259de8;
 }
 
