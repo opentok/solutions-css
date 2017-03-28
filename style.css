@@ -34,11 +34,11 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkitalign-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .ots-widget-container.viewing-shared-screen {
@@ -65,12 +65,15 @@
     background-position: center center;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
     .ots-icon-check {
         background-image: url("https://assets.tokbox.com/solutions/images/text-chat-check@2x.png");
         background-size: 27px 21px;
     }
 }
+
 
 /* Aspect Ratio for Screen Sharing */
 
@@ -81,7 +84,7 @@
     padding: 0;
 }
 
-.ots-aspect-ratio > .video-container {
+.ots-aspect-ratio>.video-container {
     position: absolute;
 }
 
@@ -110,11 +113,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     z-index: 1001;
     background: rgba(0, 0, 0, 0.8);
 }
@@ -177,11 +180,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 1001;
 }
 
@@ -197,6 +200,7 @@
 .ots-widget-container .secondary-video.active {
     border: 1px solid rgba(255, 255, 255, .8);
 }
+
 
 /* Move down so as to not cover canvas */
 
@@ -325,6 +329,7 @@
     background-image: url("https://assets.tokbox.com/solutions/images/icon-muted-mic.png");
 }
 
+
 /*Text Chat */
 
 .ots-text-chat {
@@ -372,8 +377,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     height: 365px;
     overflow: hidden;
     overflow-y: scroll
@@ -409,7 +414,7 @@
 .ots-text-chat .ots-messages-holder .ots-message-item {
     position: relative;
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     padding: 0 50px 0 50px;
     margin: 15px 25px 10px 20px
 }
@@ -492,7 +497,7 @@
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent {
     margin: 15px 20px 10px 25px;
     -ms-flex-item-align: end;
-        align-self: flex-end
+    align-self: flex-end
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-user-name-initial {
@@ -530,7 +535,7 @@
 }
 
 .ots-text-chat .ots-messages-holder .ots-message-item.ots-message-sent .ots-item-timestamp {
-  text-align: right
+    text-align: right
 }
 
 .ots-text-chat .ots-send-message-box {
@@ -565,7 +570,8 @@
     border-left: 1px solid #c6c6c6;
 }
 
-.ots-text-chat .ots-send-message-box button:hover, .ots-text-chat .ots-send-message-box .active {
+.ots-text-chat .ots-send-message-box button:hover,
+.ots-text-chat .ots-send-message-box .active {
     background-color: #259de8;
 }
 
@@ -597,6 +603,7 @@
 .ots-text-chat .ots-user-prof-info hr {
     margin: 36px 0;
 }
+
 
 /* Screensharing styles */
 
@@ -676,7 +683,9 @@
     background-color: transparent;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
     .ots-ss-modal .ots-modal-body .ots-cancel-btn-install {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-close@2x.png");
         background-size: 25px 25px;
@@ -689,12 +698,15 @@
     background-position: center center;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
     .ots-icon-share-large {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-screenshare-large@2x.png");
         background-size: 60px 41px;
     }
 }
+
 
 /*Annotation Styles*/
 
@@ -713,11 +725,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .ots-annotation-toolbar-container .OT_panel.colors-hover:before {
@@ -803,11 +815,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
 }
@@ -869,8 +881,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     top: 75px;
     min-height: 159.89px;
 }
@@ -970,6 +982,7 @@
     cursor: pointer;
 }
 
+
 /* Archiving */
 
 .ots-archiving-modal {
@@ -1011,25 +1024,25 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
-.ots-archiving-modal .modal-content > div {
+.ots-archiving-modal .modal-content>div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     height: 33.33%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .ots-archiving-modal .modal-header h2 {
@@ -1055,7 +1068,9 @@
     background-repeat: no-repeat;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
     .ots-archiving-modal .modal-header::before {
         background-image: url("https://assets.tokbox.com/solutions/images/icon-download@2x.png");
     }
@@ -1085,7 +1100,7 @@
     font-size: 16px;
 }
 
-.ots-archiving-modal .modal-info > div {
+.ots-archiving-modal .modal-info>div {
     margin: 5px auto;
     font-family: Muli;
 }
@@ -1118,11 +1133,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .ots-archiving-modal .btn {
