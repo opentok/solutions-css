@@ -1148,7 +1148,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     line-height: 35px;
     color: white;
     text-decoration: none;
-    border: 1px solid rgba(68 68 68, 1);
+    border: 1px solid rgba(68, 68, 68, 1);
     font-size: 14px;
     font-weight: 100;
     cursor: pointer;
